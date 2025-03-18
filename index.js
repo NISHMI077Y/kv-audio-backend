@@ -35,7 +35,7 @@ app.use((req,res,next)=>{
 
 
 
-let mongoUrl = "mongodb+srv://nishmi:123@cluster0.o3dfx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+let mongoUrl = process.env.MONGO_URL;
 
 mongoose.connect(mongoUrl)
 
