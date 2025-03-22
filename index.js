@@ -3,8 +3,10 @@ import bodyParser from "body-parser";
 import mongoose from  "mongoose";
 import userRouter from "./route/userRouter.js";
 import productRouter from "./route/productRouter.js";
-import jwt, { decode } from "jsonwebtoken"
-;
+import jwt, { decode } from "jsonwebtoken";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const app = express();
 
