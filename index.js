@@ -55,4 +55,15 @@ app.use("/api/reviews",reviewRouter);
 
 app.listen(3000, () =>{  
 console.log("Server is running on port 3000");
-}); //`app.listen` method will start the server on the given port
+});
+
+//`app.listen` method will start the server on the given port
+
+
+/*"email": "yasiru1@gmail.com",
+"password": "12345",
+"role": "customer"*/
+
+/*"email": "nishmi1@gmail.com",
+    "password": "123456",
+    "role": "admin",*/
