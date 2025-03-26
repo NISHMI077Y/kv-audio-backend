@@ -66,6 +66,15 @@ export function registerUser(req,res){
                 
                 }
 
-            
+export function isItCustomer(req){
+    let isCustomer = false;
+
+    if(req.user != null){
+        if(req.user.role == "customer"){
+            isCustomer = true;
+        }
+    }
+    return isCustomer;
+}
         
     
