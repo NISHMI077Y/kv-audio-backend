@@ -59,7 +59,8 @@ export async function updateProduct(req,res) {
     try{
         if(isItAdmin(req)){
 
-            const key = Params.key;
+            const key = req.params.key;
+
 
             const data = req.body
 
