@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 
 const inquirySchema = new mongoose.Schema({
     id:{
-        type : String,
+        type : Number,
         required : true,
         unique : true
 

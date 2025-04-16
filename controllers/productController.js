@@ -40,7 +40,7 @@ export async function getProducts(req,res){
     try{
         if(isItAdmin(req)){
         const product = await Product.find();
-        res.json(products);
+        res.json(product);
         return;
         }else{
             const products =await Product.find({availability:true});

@@ -49,7 +49,7 @@ export function registerUser(req,res){
                         res.json({ message: "Login successful" , token : token , user : user});
 
                     } else{
-                        res.status(404).json({error: "Login failed"});
+                        res.status(404).json({error: "Password is incorrect"});
                     }
             
                     
